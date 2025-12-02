@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    //Dark/Light Mode Toggle 
+    // Dark/Light Mode Toggle 
     const themeToggle = document.getElementById("theme-toggle");
     const body = document.body;
     const icon = themeToggle.querySelector("i");
@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    // Dynamic Typing Effect ---
+    // Dynamic Typing Effect 
     const textElement = document.querySelector(".typewriter-text");
     const texts = ["Graphic Designer", "Multimedia Grad", "Visual Storyteller"];
     let count = 0;
@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     })();
 
-    //  Feature 4: Smooth Scroll (handled by CSS, enhanced here for older browsers) ---
+    // Smooth Scroll (this one is handled by CSS 
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
@@ -68,10 +68,10 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    //  Dynamic Copyright Year
+    // Dynamic Copyright Year
     document.getElementById("year").textContent = new Date().getFullYear();
 
-    // Form Validation ---
+    // Form Validation
     const form = document.getElementById("contact-form");
     const feedback = document.getElementById("form-feedback");
 
@@ -94,7 +94,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    //  Scroll to Top Button Visibility ---
+    // Scroll to Top Button Visibility 
     const scrollTopBtn = document.getElementById("scroll-top");
     
     window.addEventListener("scroll", () => {
@@ -105,7 +105,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    //  Reveal on Scroll Animation ---
+    // Reveal on Scroll Animation 
     const revealElements = document.querySelectorAll(".project-card, .about-text");
 
     const revealOnScroll = () => {
@@ -127,7 +127,7 @@ document.addEventListener("DOMContentLoaded", () => {
     
     window.addEventListener("scroll", revealOnScroll);
 	
-	//  3D Tilt Effect for Project Cards ---
+	// 3D Tilt Effect for Project Cards 
     const cards = document.querySelectorAll('.project-card');
 
     cards.forEach(card => {
@@ -139,7 +139,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const centerX = rect.width / 2;
             const centerY = rect.height / 2;
             
-            const rotateX = ((y - centerY) / centerY) * -10; // Max tilt 10deg
+            const rotateX = ((y - centerY) / centerY) * -10; 
             const rotateY = ((x - centerX) / centerX) * 10;
 
             card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.05)`;
@@ -149,4 +149,5 @@ document.addEventListener("DOMContentLoaded", () => {
             card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) scale(1)';
         });
     });
+
 });
