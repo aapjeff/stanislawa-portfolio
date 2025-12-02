@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stanislawa | Multimedia & Design Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">Stanislawa.</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><button id="theme-toggle"><i class="fas fa-moon"></i></button></li>
+        </ul>
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="home-content">
+            <span class="hello">Hello, I'm</span>
+            <h1>Stanislawa Sigai</h1>
+            <h3><span class="typewriter-text"></span></h3>
+            <p>Multimedia Computing Graduate & Graphic Designer based in Sarawak.</p>
+            <div class="social-icons">
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="#" aria-label="Behance"><i class="fab fa-behance"></i></a>
+                <a href="mailto:stanislawa1505@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+            <a href="#contact" class="btn">Hire Me</a>
+        </div>
+        <div class="home-img">
+            <img src="profile.png" alt="Stanislawa Profile Photo" id="profile-pic">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2 class="heading">About <span>Me</span></h2>
+        <div class="about-container">
+            <div class="about-text">
+                <h3>Creative Visual Storyteller</h3>
+                <p>I am a recent Bachelor of Computer Science (Multimedia Computing) graduate from UNIMAS. I specialize in blending technical ability with creative visual design to produce engaging digital content. My experience at PETRONAS gave me hands-on skills in corporate branding, video editing, and visual communication.</p>
+                
+                <div class="skills-grid">
+                    <div class="skill-item"><i class="fas fa-palette"></i> Graphic Design</div>
+                    <div class="skill-item"><i class="fab fa-adobe"></i> Adobe Photoshop</div>
+                    <div class="skill-item"><i class="fas fa-video"></i> Video Editing</div>
+                    <div class="skill-item"><i class="fas fa-pen-nib"></i> Canva Pro</div>
+                </div>
+
+                <div class="education-timeline">
+                    <h4>Education</h4>
+                    <p><strong>2022 - 2025:</strong> UNIMAS (B.Comp.Sc Multimedia Computing)</p>
+                    <p><strong>2019 - 2022:</strong> Politeknik Kuching (Diploma in ICT)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2 class="heading">My <span>Projects</span></h2>
+        <div class="projects-container">
+            
+            <!-- Project 1 -->
+            <div class="project-card">
+                <div class="project-img">
+				 <img src="project1.jpg" alt="Corporate Visual Materials" style="width:100%; height:100%; object-fit:cover;">
+                    <!-- Placeholder color block -->
+                   
+                </div>
+                <div class="project-info">
+                    <h4>Corporate Visual Materials</h4>
+                    <p>Designed official posters, slide presentations, and visual assets for corporate and departmental functions at PETRONAS.</p>
+                    <a href="#" class="btn-small">View Sample</a>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card">
+                <div class="project-img">
+                     <img src="project2.jpg" alt="Video Production" style="width:100%; height:100%; object-fit:cover;">
+                </div>
+                <div class="project-info">
+                    <h4>Event Montage & Video</h4>
+                    <p>Conducted video shooting and editing for internal and external events, documenting key corporate milestones.</p>
+                    <a href="#" class="btn-small">Watch Video</a>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card">
+                <div class="project-img">
+                      <img src="project3.jpg" alt="Community Branding" style="width:100%; height:100%; object-fit:cover;">
+                </div>
+                <div class="project-info">
+                    <h4>"The Greater Good" Project</h4>
+                    <p>Lead designer for community service project merchandise (T-shirts, banners) and documentation (photography/montage).</p>
+                    <a href="#" class="btn-small">View Gallery</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+        <form id="contact-form">
+            <div class="input-box">
+                <input type="text" id="name" placeholder="Full Name">
+                <input type="email" id="email" placeholder="Email Address">
+            </div>
+            <div class="input-box">
+                <input type="text" id="subject" placeholder="Email Subject">
+            </div>
+            <textarea id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn">Send Message</button>
+            <p id="form-feedback"></p>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-text">
+            <p>Copyright &copy; <span id="year"></span> by Stanislawa | All Rights Reserved.</p>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#home" id="scroll-top"><i class="fas fa-arrow-up"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
