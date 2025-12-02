@@ -1,10 +1,10 @@
-/* Google Fonts */
+/*Fonts from google*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root {
     --bg-color: #fdfdfd;
     --text-color: #333;
-    --main-color:#8854d0; /* Picked a soft tone fitting for a designer */
+    --main-color:#8854d0;
     --second-bg-color: #f0f0f0;
     --box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
@@ -36,7 +36,7 @@ html {
 }
 
 body {
-    /* Very Soft: Pale Pink -> Lavender -> Baby Blue -> Cream */
+    /* Colour changing */
     background: linear-gradient(-45deg, #fff1eb, #ace0f9, #e0c3fc, #fdfbfb);
     background-size: 400% 400%;
     animation: gradientBG 20s ease infinite; /* Slower (20s) for a calm vibe */
@@ -49,7 +49,7 @@ body {
     100% { background-position: 0% 50%; }
 }
 
-/* Navbar */
+/* Navigatin bar */
 .navbar {
     position: fixed;
     top: 0;
@@ -385,13 +385,12 @@ footer {
 
 /* Animated Background for Dark Mode */
 body.dark-mode {
-    /* Deep Space: Midnight Blue -> Deep Purple -> Black -> Dark Slate */
     background: linear-gradient(-45deg, #0f2027, #203a43, #2c5364, #2b1055);
     background-size: 400% 400%;
     animation: gradientBG 15s ease infinite;
 }
 
-/* Make glass cards look darker in dark mode */
+/* Glass Card Colour for darkmode */
 body.dark-mode .project-card, 
 body.dark-mode .navbar,
 body.dark-mode .skill-item,
@@ -400,4 +399,5 @@ body.dark-mode textarea {
     background: rgba(0, 0, 0, 0.6); /* Dark glass */
     border: 1px solid rgba(255, 255, 255, 0.1);
     color: #fff;
+
 }
